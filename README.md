@@ -6,7 +6,7 @@ Quelques templates LaTex de l'Université Paris Cité (Paris V).
 
 ## Presentation (Slides)
 
-![Presentation](https://github.com/Malekbennabi3/Templates_LaTex/blob/main/Aper%C3%A7u/Presentation.png)
+![Presentation](https://github.com/Malekbennabi3/Templates_LaTex/blob/main/Aper%C3%A7u/presentation.png)
 
 ## Template 1 
 ![Template 1](https://github.com/Malekbennabi3/Templates_LaTex/blob/main/Aper%C3%A7u/temp1.jpeg)
