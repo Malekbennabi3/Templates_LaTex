@@ -1,0 +1,208 @@
+%! Author = HP
+%! Date = 21/01/2024
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[Lenny]{fncychap}
+
+
+\begin{document}
+
+
+    \tableofcontents
+    \newpage
+    \listoffigures
+    \newpage
+
+
+    \section*{\Huge Résumé}
+    \LARGE ................................ \newline
+
+    \newpage
+    \Large
+
+
+    \part{Partie}
+    \section{Titre}
+    \subsection{Sous-Titre}
+    ..................................
+    \newpage
+    \subsection{Sous-Titre2}
+    \begin{itemize}
+        \item .............. \newline
+        \item .............. \newline
+        \item .............. \cite{r2} \newline
+    \end{itemize}
+
+
+
+    \newpage
+    \section{Titre2}
+
+    \subsection{Sous-Titre }
+    ...........................
+
+    \begin{figure}[!ht]
+        \center
+        \includegraphics[width=1\linewidth]{C:/Users/HP/Videos/atmega-328.png}
+        \caption{Le Micro contrôleur ATMega 328\cite{r41}}
+    \end{figure}
+
+
+        \begin{enumerate}
+            \item \textbf{Premier point} : ........ \cite{r10}
+            \item \textbf{Deuxieme point}: ....... \cite{r43}
+        \end{enumerate}
+
+
+    \Large
+
+
+
+    \newpage
+    \subsection{Systèmes de Gestion de Bases de Données}
+    Ce sont des logiciels qui offrent un ensemble de fonctions permettant la définition, l’exploitation et la gestion de tables et de leur contenu.
+    ils organisent les données sous la forme de tables et de colonnes, où il est possible d’ajouter et de retirer des lignes dans une table, il est aussi possible de modifier les valeurs d’une colonne dans certaines lignes tout en garantissant le respect des contraintes d’unicité et de références déclarées.
+    Les SGBD permettent L’accès aux données et leur manipulation à l’aide du langage SQL sous forme de requêtes (\textbf{Voir la Figure \ref{f18}}). \cite{r12}
+
+
+
+
+    \newpage
+    \subsection*{Conclusion}
+    ...........................................
+
+
+
+    \newpage
+
+    \part{Partie2}
+
+    \setcounter{section}{0}
+
+
+    \section{Titre3}
+
+    \subsection{Sous-Titre}
+    ................................
+
+
+    \begin{table}[!h]
+        \centering
+        \begin{tabular}{|c|c|}
+            \hline
+            Microcontrôleur & ATmega328P \\
+            \hline
+            Tension de Fonctionnement & 5V \\
+            \hline
+            Tension d'Entrée & 7-12V \\
+            \hline
+            Tension Limite & 6-20V \\
+            \hline
+            Broches Digitales & 14 (6 PMW) \\
+            \hline
+            Broches Analogues & 6 \\
+            \hline
+            Courant DC par Broche & 20mA \\
+            \hline
+            Courant DC par Broche 3.3V & 50mA \\
+            \hline
+            Mémoire Flash & 32Kb \\
+            \hline
+            SRAM & 2Kb \\
+            \hline
+            EEPROM & 1Kb \\
+            \hline
+            Vitesse d'Horloge & 16 MHz \\
+            \hline
+        \end{tabular}
+        \caption{spécifications techniques de l'Arduino UNO \cite{r17}}
+    \end{table}
+
+
+
+    \begin{enumerate}
+        \item Filtres
+        \begin{itemize}
+            \item Sexe (JComboBox)
+            \begin{itemize}
+                \item Homme
+                \item Femme
+            \end{itemize}
+
+            \item Département (JComboBox)
+            \begin{itemize}
+                \item Tronc Commun MI
+                \item Mathématiques
+                \item Informatique
+                \item Physique
+                \item Chimie
+            \end{itemize}
+
+            \item Niveau(CheckBox)
+            \begin{itemize}
+                \item L1
+                \item L2
+                \item L3
+                \item M1
+                \begin{itemize}
+                    \item Toutes les spécialités
+                    \item IL
+                    \item ISIA
+                \end{itemize}
+                \item M2
+                \begin{itemize}
+                    \item Toutes les spécialités
+                    \item IL
+                    \item ISIA
+                \end{itemize}
+                \item Tous les niveaux
+            \end{itemize}
+            \item Grade (CheckBox)
+            \begin{itemize}
+                \item M.C A
+                \item M.C B
+                \item M.A A
+                \item M.A B
+                \item Professeur
+                \item Tous les Grades
+            \end{itemize}
+
+        \end{itemize}
+
+        \item Zone texte (JtextField): Elle contient le message à envoyer
+        \item Compteur de caractères (JLabel): Pour ne pas dépasser le nombre de caractères supporté par le protocole GSM(\textbf{voir Page 20})
+        \item Bouton Effacer(JButton): Pour vider tout le contenu de la  Zone de texte
+        \item Bouton Lister (JButton): Pour ouvrir la deuxième interface
+        \item Bouton Envoyer (JButton): Pour envoyer directement à toutes les personnes sélectionnées
+
+    \end{enumerate}
+
+
+    \newpage
+    \section*{Conclusion Générale }
+    \addcontentsline{toc}{section}{Conclusion Générale}
+    ............................................................\newline
+    \par .......................................................
+    \par ..................................................
+
+    \small
+
+    \newpage
+    \begin{thebibliography}{99}
+
+        \bibitem{r1}
+        Heavy Ai, Embedded-systems [en-ligne], [Consulté le 12/03/2022], Disponible à l'adresse: https://www.omnisci.com/technical-glossary/embedded-systems.
+
+        \bibitem{r2}
+        UKO, Programmation de systèmes embarqués: de l'hardware au software[en-ligne], [Consulté le 03/03/2022], disponible à l'adresse: https://www.ukonline.be/cours/embeddedsystems/programming/chapitre1-1
+
+        \bibitem{r3}
+        FUTURA-SCIENCE, Système embarqué : qu'est-ce que c'est ?[en-ligne], Disponible à l'adresse: https://www.futura-sciences.com/tech/definitions/technologie-systeme-embarque-15282.
+        
+
+    \end{thebibliography}
+
+
+
+\end{document}
