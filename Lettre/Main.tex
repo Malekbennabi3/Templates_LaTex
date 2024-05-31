@@ -1,0 +1,57 @@
+\documentclass{lettreIPGP}
+\usepackage[T1]{fontenc}
+%\usepackage[latin1]{inputenc}
+\usepackage[french]{babel}
+%\usepackage[english]{babel}
+\usepackage{lipsum}
+
+\begin{document}
+
+\lettertype{ETABLISSEMENT}  
+%\lettertype{IPGP}          
+%\lettertype{UMR}           
+%\lettertype{UMRlamarck}    
+%\lettertype{UMS}           
+%\lettertype{OVFP}          
+%\lettertype{OVSG}          
+%\lettertype{OVSM}          
+
+\putlogo
+
+{\bfseries (Titre) Prénom Nom}\\
+Fonction / Nom de l’équipe\\
+\myaddr
+{\color{darkgray}
++ 33 (0)1 83 95 XX XX    % ETABLISSEMENT, IPGP, UMR, UMRlamarck, UMS
+%+ 262 (0)2 62 27 XX XX   % OVFP
+%+ 590 (0)5 90 99 XX XX   % OVSG 
+%+ 596 (0)5 96 78 XX XX   % OVSM
+\\
+nom@ipgp.fr
+}
+
+\hspace*{\fill}\begin{minipage}{5cm}
+{\bfseries Destinataire}\\
+Titre\\
+Adresse
+\end{minipage}
+
+Références\\
+Objet
+
+\begin{flushright}
+Ville\\
+\today
+\end{flushright}
+
+Madame, Monsieur,
+
+\vspace*{3mm}
+
+\lipsum[1-10]
+
+\vspace{1.5cm}
+
+\rightline{Signature}
+\end{document}
+
