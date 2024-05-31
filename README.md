@@ -1,7 +1,9 @@
 # Templates_LaTex
 Quelques templates LaTex de l'Université Paris Cité (Paris V).
 
-## PHD
+## Page de garde
+![Page de garde](https://github.com/Malekbennabi3/Templates_LaTex/blob/main/Aper%C3%A7u/PageGarde.png)
+
 
 ## Template 1 
 ![Template 1](https://github.com/Malekbennabi3/Templates_LaTex/blob/main/Aper%C3%A7u/temp1.jpeg)
