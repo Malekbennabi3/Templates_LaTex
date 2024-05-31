@@ -1,0 +1,309 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MODELE DE MANUSCRIT DE THESE 
+% DE L'UNIVERSITE PARIS CITE
+% OFFICIEL
+
+% LaTeX Template
+% Version overleaf (14/10/2023) 
+% Format BOOK
+% Par Aleksandra SAVINA, PhD
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%----------------------------------------------------------------------------------------
+%	PREAMBULE // PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[a4paper,12pt,twoside,french]{book}
+[a4paper,12pt,twoside]
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+%	MARGIN SETTINGS
+\usepackage[a4paper,left=3cm,right=2.5cm,top=3cm,bottom=3cm, twoside]{geometry}
+
+\usepackage{xcolor}
+\usepackage{stmaryrd}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{libertine}
+
+%\usepackage{cite}
+\usepackage{hyperref} % for references (\ref, \label), url
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,      
+    urlcolor=black,
+    citecolor=black,
+    pdfpagemode=FullScreen,
+    }
+\usepackage[
+    %backend=biber, 
+    natbib=true,
+    style=numeric,
+    sorting=none
+]{biblatex} %Imports biblatex package
+
+\addbibresource{biblio.bib} %Import the bibliography file
+
+\usepackage{graphicx} % to include images
+%\usepackage[pdftex]{graphicx}
+\graphicspath{ {figures/} }
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{array, multirow, tabularx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{apalike}
+\usepackage{minitoc}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage[strict]{changepage}
+\usepackage{siunitx}
+\selectlanguage{french}%
+
+\usepackage{enumitem}
+\usepackage{epigraph}
+%\usetikzlibrary{shadows.blur}
+\usepackage{lscape}
+\usepackage{titletoc}
+\usepackage{mdframed}
+
+\usepackage{tabu}
+\usepackage{pdfpages}
+
+\usepackage{arydshln}
+%\usepackage[nonumberlist]{glossaries}
+\usepackage{calc}
+\usepackage[]{titlesec} 
+\definecolor{linkColor}{HTML}{32a852}
+%\usepackage[colorlinks=true,citecolor=linkColor,linkcolor=black]{hyperref}
+
+\addto\captionsfrench{%
+  \renewcommand{\listfigurename}{Liste des figures}%
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{sectsty}
+%\sectionfont{\color{CentraleRed}}  % sets colour of sections
+%\subsectionfont{\color{uclablue}}  % sets colour of subsections, ou gray, teal 
+\definecolor{darkseagreen}{rgb}{0.56, 0.74, 0.56}
+\usepackage{lipsum}
+
+\title{NMR global data Version2}
+\author{Aleksandra Savina}
+\date{October 2022}
+
+
+%----------------------------------------------------------------------------------------
+%	HEADERS AND FOOTERS
+%----------------------------------------------------------------------------------------
+
+%\fancyhead[RO]{\scshape \leftmark}
+%\fancyhead[L]{\scshape \righttmark}
+\fancyhead{} % clear all header fields
+\fancyfoot{} % clear all footer fields
+%\fancyhead[LE,RO]{\slshape \rightmark}
+\fancyfoot[C]{--~\thepage~--}
+
+\usepackage{emptypage}
+
+%\leftmark : adds name and number of the current top-level structure (for example, Chapter for reports and books classes; Section for articles ) in uppercase letters.
+% \rightmark : adds name and number of the current next to top-level structure (Section for reports and books; Subsection for articles) in uppercase letters.
+
+%%%%%%Glossaire
+%\usepackage{glossaries}
+\usepackage[acronym,xindy,toc]{glossaries} % nomain, if you define glossaries in a file, and you use \include{INP-00-glossary}
+%[nomain,acronym,xindy,toc]
+\makeglossaries
+
+\usepackage[xindy]{imakeidx}
+\makeindex
+%\input{auxilliaires/glossaire}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%	DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%\maketitle
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+	\begin{titlepage}
+		\begin{center}
+			\begin{tabular}{c@{\hskip 7cm}c@{\hskip 1cm}}
+				\includegraphics[height=2.5cm]{figures/PageTitre/UParisCitelogo.jpg} &
+				%si autre logo : \includegraphics[height=2.3cm]{figures/PageTitre/logo_ic_2021.jpg}
+			\end{tabular}
+		\end{center}
+	
+		\begin{center}
+		
+\vspace*{.03\textheight}
+\textsc{\LARGE Université Paris Cité}\\[0.2cm] % Univ name
+		\large École doctorale [Nom et numéro identifiant]\\
+		  Laboratoire \\ 
+        %Équipe de recherche\\
+  
+  			\vfill
+ 
+	 		\rule{\textwidth}{0.8pt} \\ % Horizontal line
+	 		\vspace{10pt}
+	 		 { \LARGE \bfseries Insérer le titre de la thèse ici \textit{(dans la langue de rédaction)}} % Thesis title
+	 		 \vspace{10pt}
+	 		 \rule{\textwidth}{0.8pt} \\ % Horizontal line
+		\end{center}
+		
+		\vfill
+		% Author and supervisor	
+		\begin{center}
+			Par \textsc{\Large Prénom NOM}\\[1cm] 
+			Thèse de doctorat de \textsc{\large spécialité}\\[1.2cm]
+			Dirigée par \textsc{\large Prénom NOM}\\[0.2cm]
+            Et par \textsc{\large Prénom NOM} (en cas de co-direction et non de co-encadrement) \\[0.2cm] 
+			Présentée et soutenue publiquement/à huis clos le JJ/MM/AAAA %renseigner la date et choisir le type de soutenance
+		\end{center}
+		
+		\vspace{1cm}
+Devant un jury composé de : %(indiquer le jury complet) 		
+		\begin{center}
+			\begin{tabular}{l@{\hskip 1cm}l@{\hskip 1cm}l}
+				\textsc{Prénom NOM, Prof. HDR} & Université de Namur, Belgique  & Rapporteur \\
+				\textsc{Prénom NOM, DR}  & Université de Ville &Rapportrice \\
+				\textsc{Prénom NOM, CR-HDR}  & Université Paris Cité &Examinatrice\\
+                \textsc{Prénom NOM, DR}  & Université de Y &Examinateur\\
+				\textsc{Prénom NOM, MCF}  &Université Paris Cité  &Examinatrice \\
+				\textsc{Prénom NOM, PU-PH}  &Université Paris Cité &Membre invité \\
+				\textsc{Prénom NOM, PhD}  &Entreprise X &Membre invité \\
+				\textsc{Prénom NOM, MCF-HDR}  &Université Paris Cité &Directeur de thèse \\
+			\end{tabular}\\[1cm]
+		\end{center}
+
+	\newpage %page de garde vide
+	\thispagestyle{empty} %page de garde vide
+	\end{titlepage}
+
+%\renewcommand{\chaptermark}[1]{\markboth{\textsc{#1}}{}}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+
+
+\frontmatter % numérote les pages en chiffres romains jusqu'a la commande mainmatter
+
+%----------------------------------------------------------------------------------------
+%	RESUME ET ABSTRACT PAGE
+%----------------------------------------------------------------------------------------
+\input{auxilliaires/resume} %résumé en francais
+%\input{auxilliaires/astract} %résumé en anglais
+
+%----------------------------------------------------------------------------------------
+%	QUOTATION PAGE ou DEDICACE
+%----------------------------------------------------------------------------------------
+\clearpage
+\vspace*{0.2\textheight}
+
+\begin{quote}
+\textbf{Exemple de citation :} \\
+Comme lorsque la brume se dissipe, \\ le regard peu à peu trouve une figure\\ dans la vapeur dont les airs sont épaissis, \\ ainsi, perçant l'élément lourd et obscur\\ à mesure que nous approchions du bord, \\l'erreur me quittait ...
+\end{quote} \bigbreak
+
+\hfill 
+L’Enfer – Chant XXXI, La Divine Comédie, Dante Alighieri
+
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+\input{auxilliaires/remerciements}
+
+
+%----------------------------------------------------------------------------------------
+%	LIST OF CONTENTS/FIGURES/TABLES PAGES
+%----------------------------------------------------------------------------------------
+%\setcounter{secnumdepth}{3} % organisational level that receives a numbers
+%\setcounter{tocdepth}{3}
+\tableofcontents % Prints the main table of contents
+\listoffigures % Prints the list of figures
+\addcontentsline{toc}{chapter}{Liste des figures}
+\listoftables % Prints the list of tables
+\addcontentsline{toc}{chapter}{Liste des tableaux}
+\newpage
+
+
+%----------------------------------------------------------------------------------------
+%	Liste des abréviations-
+%----------------------------------------------------------------------------------------
+\input{auxilliaires/abreviations}
+
+
+% --------------------------------------------------------------
+%                         Début du corps
+% --------------------------------------------------------------
+
+\mainmatter
+\setlength{\parskip}{.7em}
+
+%\titlespacing*{\section}{0pt}{.9em}{.8em}
+\renewcommand{\baselinestretch}{1.1}
+
+\fancyhead[RO]{\leftmark}
+\fancyhead[LE]{\textsc{\chaptername~\thechapter}}
+
+%\chapter*{Introduction}
+\fancyhead{} % clear all header fields
+\fancyhead[OL]{\textsc{Avant-propos}}
+\input{chapters/intro.tex} %partie introduction ou avant-propos
+
+\fancyhead{} % clear all header fields
+
+\fancyhead[RO]{\leftmark}
+\fancyhead[LE]{\textsc{\chaptername~\thechapter}}
+
+\input{chapters/chap1}
+\input{chapters/chap2}
+
+\input{chapters/objectifs}
+
+%\input{chapters/article}
+%\input{chapters/chaptercontrib}
+
+%\part*{Discussion et conclusion générale}
+\fancyhead{} % clear all header fields
+\fancyhead[OL]{\textsc{Discussion et perspectives}}
+\input{chapters/discussion.tex}
+
+\fancyhead{} % clear all header fields
+\fancyhead[OL]{\textsc{Conclusion}}
+\input{chapters/conclusion.tex}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+%\printbibliography %Prints bibliography
+\fancyhead{} % clear all header fields
+\fancyhead[OL]{\textsc{Bibliographie}}
+\printbibliography[
+heading=bibintoc,
+title={Bibliographie "Adaptez le style bibliographique en fonction de votre discipline"}]
+
+%----------------------------------------------------------------------------------------
+
+%: ----------------------- glossary ------------------------
+%\printindex
+%\fancyhead{} % clear all header fields
+%\fancyhead[OL]{\textsc{Glossaire}}
+%\printglossary[title=Glossaire,toctitle=Glossaire]
+
+%\input{auxilliaires/glossaire} 
+
+
+\end{document}  

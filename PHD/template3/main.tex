@@ -1,0 +1,43 @@
+%% This layout has been constructed from the combination of several packages, layout found on internet and from my own construction. 
+%% It is done to match the Université Paris Cité layout but can be adapted for other university
+%% Chloé Goupy
+%% 6 november 2023
+
+\documentclass[11pt]{memoir}
+\setlength{\headheight}{14.80524pt}
+\input{MainLayout/Packages}
+\input{MainLayout/PageLayout}
+
+% \input{MainLayout/ChapterStyle_Hansen}
+\input{MainLayout/ChapterStyle_1}
+
+\makeatother
+% \chapterstyle{Hansen} %choose your chapter style
+\chapterstyle{daleif1}
+ 
+\begin{document}
+
+\setcounter{secnumdepth}{3}
+\thispagestyle{empty}
+\include{MainLayout/TitlePage}
+
+\tableofcontents
+
+\chapter{Title of the chapter one}\label{chap1}
+\section{Title of the section 1}
+\lipsum[1-2]
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{example-image-a}
+    \caption{\lipsum[1]}
+    \label{fig:enter-label}
+\end{figure}
+
+\urlstyle{same}
+\bibliography{References}
+
+\include{MainLayout/Backpage}
+
+\end{document}
+

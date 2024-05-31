@@ -1,0 +1,126 @@
+\chapter{Titre du chapitre} % Main chapter title
+
+%----------------------------------------------------------------------------------------
+%	SECTION 
+%----------------------------------------------------------------------------------------
+\section{Titre de la section}
+
+
+\subsection{Titre de la sous-section : abréviations, paragraphes, citations, figures et tableaux}
+\subsubsection{Titre de la sous-sous-section : utilisation des citations et abréviations}
+
+La première \textbf{citation} : \cite{Ruppell1842}. %(\acrshort{rtn})
+La deuxième et troisième citations : \cite{Faulkes2013,Faulkes2021}.
+
+\textbf{Voici l'exemple pour une abréviation.}
+Union Internationale pour la Conservation de la Nature apparaît pour la première fois dans le texte sous sa forme complète puis l'abréviation sera utilisée : l’\acrshort{IUCN}. La forme longue de cette abréviation doit être précisée dans la partie "abréviations" dans "auxilliaires". Ainsi, lorsque la forme courte apparaîtra, les pages seront référencées.
+\textbf{Autre exemple }: La jonction dermo-épidermique (\acrshort{JDE}) est une membrane basale (\acrshort{MB}) spécifique.
+
+
+\subsubsection{Titre de la sous-sous-section : rédiger avec des paragraphes}
+
+\paragraph{Titre du paragraphe.} 
+
+\lipsum[60]
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.2]{figures/chap1/SiegeUP_1920-1.jpg} %pour fixer l'échelle.
+\caption[Titre de la figure qui va apparaître dans la table]{Titre de la figure qui va apparaître sous la figure dans le document. Extrait de \cite{Smith2021-wv}.}
+\label{fig:siegeUP}
+\end{figure}
+
+
+
+\subsubsection{Titre de la sous-sous-section : faire référence à une figure et lettres grecques}
+
+\textbf{Référence à une figure} dans le texte : (figure \ref{fig:siegeUP}). 
+Exemples des \textbf{lettres grecques} : $\alpha$, $\beta$, $\gamma$, $\delta$
+
+
+%figure dans le document
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.35]{figures/chap1/faculte-upc.png} %pour fixer l'échelle.
+\caption[Titre de la figure qui va apparaître dans la table]{Titre de la figure qui va apparaître sous la figure (extrait ou adapté de \cite{Faulkes2021}).}
+\label{fig:faculteUPC}
+\end{figure}
+
+
+\subsection{Titre de la sous-section}
+\label{ajout-du-label-pour-faire-reference-a-la-sous-section}
+ 
+
+
+\begin{table}[tb]%[!ht]
+    \raggedleft
+    \caption{Liste des 5 génomes officiels d'\textit{Heterocephalus glaber} selon le NCBI.}
+    \begin{tabular}{llllp{4cm}}
+    \hline \hline
+        \textbf{Assembly Name} & \textbf{Size (Mb)} & \textbf{Level} & \textbf{Date} & \textbf{Annotation Name} \\ \hline
+        HetGla\_female\_1.0 & 2,618 & Scaffold & Mar, 2012 & NCBI RefSeq \\ \hline
+       HetGla\_1.0 & 2,644 & Scaffold & Nov, 2011 & Annotation submitted by Beijing Genomics Institute \\ \hline
+      Heter\_glaber.v1.7\_hic\_pac & 3,042 & Scaffold & Sep, 2020 & ~ \\ \hline
+        Naked mole-rat maternal & 2,500 & Chromosome & Aug, 2022 & ~ \\ \hline
+       Naked mole-rat paternal & 2,499 & Chromosome & Aug, 2022 & ~ \\ \hline \hline
+    \end{tabular}
+\end{table}
+
+
+\subsubsection{Titre de la sous-sous-section : tables, tableaux et tableaux sur 2 pages}
+Le tableau \ref{tab-dom-et} présente xxx.
+
+\lipsum[60]
+
+%\small
+\begin{center}
+\footnotesize
+\begin{longtable}{p{3cm}p{10.5cm}}
+\caption{Titre de la table longue (sur 2 pages).} \label{tab-dom-et} \\
+\hline \hline \multicolumn{1}{l}{\textbf{Domaine d’étude}} & \multicolumn{1}{p{10cm}}{\textbf{Principales caractéristiques d’intérêt pour ces domaines d’études}} \\ \hline 
+\endfirsthead
+
+\multicolumn{2}{l}%
+{{\bfseries \tablename\ \thetable{} -- suite de la page précédente}} \\
+\hline \multicolumn{1}{l}{\textbf{Domaine d’étude}} & \multicolumn{1}{p{10cm}}{\textbf{Principales caractéristiques d’intérêt pour ces domaines d’études}} \\ \hline 
+\endhead
+
+\hline \multicolumn{1}{c}{{Suite à la page suivante}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
+Coopération sociale             &   Eusocialité \cite{Ruppell1842, Faulkes2013}, rôle insaisissable de la prolactine \cite{Faulkes2013}. \\
+Endocrinologie et \newline Reproduction   &   Régulation phosphocalcique et de la glycémie singulière, utilisation privilégiée du cortisol, inhibition de l’axe gonadotrope, report de la puberté, pas de ménopause \cite{Faulkes2013}.   \\
+Oncologie                       & Résistance aux cancers : plusieurs formes de cancers spontanés ou expérimentalement induits, caractéristiques génomiques uniques et des adaptations moléculaires compatibles avec la résistance au cancer \cite{Faulkes2013}.      \\
+Hypoxie et \newline hypercapnie          &   Tolérance accrue à l'hypoxie, survie pendant des heures à 3\% d'O2 \cite{Faulkes2013}, survie de 18 minutes en anoxie \cite{Faulkes2013}, évolution dans un environnement confiné avec une forte densité animale \cite{Faulkes2013}. Réorganisation du métabolisme pour tolérer un environnement faible en oxygène \cite{Faulkes2013}. Niveau élevé d'activation du facteur 1$\alpha$ inductible de l'hypoxie (HIF-1$\alpha$), d'expression du facteur A de croissance endothéliale vasculaire (VEGFA), du NF$\kappa$B et de plusieurs protéines impliquées dans les fonctions neuroprotectrices pendant les conditions hypoxiques \cite{Faulkes2013}. Réponses ventilatoires hypoxiques et hypercapniques diminuées, pas d'oedème pulmonaire \cite{Faulkes2013}. \\
+Somatosensoriel                 & Organe voméro-nasal peu développé, vision rudimentaire, rôle des vibrisses et poils sensoriels dans son orientation spatiale, organisation corticale somatosensorielle, sensibilité auditive originale \cite{Faulkes2013}.     \\ 
+Somatosensoriel                 & Organe voméro-nasal peu développé, vision rudimentaire, rôle des vibrisses et poils sensoriels dans son orientation spatiale, organisation corticale somatosensorielle, sensibilité auditive originale \cite{Faulkes2013}.     \\ 
+Somatosensoriel                 & Organe voméro-nasal peu développé, vision rudimentaire, rôle des vibrisses et poils sensoriels dans son orientation spatiale, organisation corticale somatosensorielle, sensibilité auditive originale \cite{Faulkes2013}.     \\ 
+Somatosensoriel                 & Organe voméro-nasal peu développé, vision rudimentaire, rôle des vibrisses et poils sensoriels dans son orientation spatiale, organisation corticale somatosensorielle, sensibilité auditive originale \cite{Faulkes2013}.     \\ 
+Système X & Système et détails \cite{Faulkes2013}.   \\
+\end{longtable}
+\end{center}
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	SECTION 
+%----------------------------------------------------------------------------------------
+\clearpage 
+
+
+
+\section{Titre de la section}
+
+\subsection{Titre de la sous-section}
+
+\subsection{Titre de la sous-section}
+
+
+%----------------------------------------------------------------------------------------
+%	SECTION 
+%----------------------------------------------------------------------------------------
