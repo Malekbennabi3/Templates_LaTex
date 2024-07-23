@@ -19,3 +19,11 @@ Quelques templates LaTex de l'Université Paris Cité (Paris V).
 
 ## Lettre
 ![Lettre](https://github.com/Malekbennabi3/Templates_LaTex/blob/main/Aper%C3%A7u/temp4.jpeg)
+
+## Logos
+
+- ![Logo UPCité](https://github.com/Malekbennabi3/Templates_LaTex/blob/main/Rapport/UniversiteParis_monogramme_couleur_RVB.png)
+- ![Logo Math Info](https://github.com/Malekbennabi3/Templates_LaTex/blob/main/Rapport/UniversiteParis_Math%C3%A9matiques-et-informatique%20(1).jpg)
+- ![Logo UPCité1](https://github.com/Malekbennabi3/Templates_LaTex/blob/main/Rapport/UniversiteParisCite_logo_horizontal_couleur_RVB.png)
+- ![Logo Math Info](https://github.com/Malekbennabi3/Templates_LaTex/blob/main/Rapport/Paris%20cite_MathInfo.png)
+- ![Lettre](https://github.com/Malekbennabi3/Templates_LaTex/blob/main/Aper%C3%A7u/temp4.jpeg)
